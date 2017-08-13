@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="flexboxgrid.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script type="text/javascript" src="skycons.js"></script>
+</head>
+<body>
+  <div id='time'class='info-container'>
+    <header>
+      <h1>Time</h1>
+    </header>
+    <p id='time-inner'>
+      Loading time...
+    </p>
+  </div>
+
+  <div id='links' class='info-container'>
+    <header><h1>Links</h1></header>
+    <p id='links-inner'>
+      <ul>
+        <li>Hacker News</li>
+        <li>Dev.to</li>
+        <li>Medium</li>
+        <li>Dribbble</li>
+      </ul>
+    </p>
+  </div>
+
+  <div id='weather' class='info-container'>
+    <header>
+      <h1>Weather</h1>
+    </header>
+      <section id='weather-inner'>
+        <div id='weather-top-row' class="row">
+          <p id='weather-city' class="col-md-6">Portsmouth</p>
+          <canvas class="col-md-6" id='weather-canvas'></canvas>
+        </div>
+      </section>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
