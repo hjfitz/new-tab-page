@@ -4,9 +4,11 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   padding:0;
@@ -26,6 +28,16 @@ header>h1 {
   color: #fafafa;
   text-align:center;
   font-size: 3rem;
+}
+
+ul {
+  color: #fafafa;
+  line-height: 1.75rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
 }
 
 #weather, #links, #time {
