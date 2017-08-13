@@ -28,10 +28,24 @@ header>h1 {
   font-size: 3rem;
 }
 
+#weather, #links, #time {
+  min-height: 350px;
+  min-width: 250px;
+}
+
 #time {
   border: 2px solid;
   border-image: linear-gradient(to left, #00838f 1%, rgba(128, 216, 255, 1) 100%);
   border-image-slice: 1;
+}
+
+#time {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#time>p {
+  padding: 1rem;
 }
 
 #links {
@@ -45,21 +59,29 @@ header>h1 {
   border-image: linear-gradient(to left, #69f0ae 1%, #c6ff00 100%);
   border-image-slice: 1;
   padding:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #weather-canvas {
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#weather-top-row {
+    text-align:center;
 }
 
 #weather-city {
+  margin: 0 auto;
   font-size: 2rem;
-  text-align:right;
+  text-align:center;
+  margin:0;
 }
 
-#weather-city, #weather-canvas {
-  height: 100px;
-}
 
 #temperature-para {
   margin: 0 auto;
