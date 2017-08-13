@@ -35,6 +35,11 @@ ul {
   line-height: 1.75rem;
 }
 
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
 #links {
   display: flex;
   flex-direction: column;
