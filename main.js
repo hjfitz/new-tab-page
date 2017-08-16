@@ -26,7 +26,7 @@ const weatherCanvas = document.getElementById('weather-canvas');
    '50': 'FOG'
  }
 
-const portsmouthURI = 'http://api.openweathermap.org/data/2.5/weather?lat=70.8&lon=-1.1&appid=bbc67f01cffb0e40951dbab4a4e69a87';
+const portsmouthURI = 'https://api.openweathermap.org/data/2.5/weather?lat=70.8&lon=-1.1&appid=bbc67f01cffb0e40951dbab4a4e69a87';
 
 const toCelsius = weather => {
   return (weather - 273.15).toFixed();
