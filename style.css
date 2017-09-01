@@ -11,8 +11,8 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   background-color: var(--bg-color);
 }
 
@@ -24,15 +24,17 @@ div {
   margin: 5%;
 }
 
-header>h1 {
+header > h1 {
   color: #fafafa;
-  text-align:center;
+  text-align: center;
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
 ul {
   color: #fafafa;
-  line-height: 1.75rem;
+  line-height: 3.75rem;
+  font-size: 1.7rem;
 }
 
 a {
@@ -45,29 +47,41 @@ a {
   flex-direction: column;
 }
 
-#weather, #links, #time {
-  min-height: 350px;
-  min-width: 250px;
+#weather,
+#links,
+#time {
+  min-height: 550px;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #time {
   border: 2px solid;
-  border-image: linear-gradient(to left, #00838f 1%, rgba(128, 216, 255, 1) 100%);
+  border-image: linear-gradient(
+    to left,
+    #00838f 1%,
+    rgba(128, 216, 255, 1) 100%
+  );
+  transition: 1s;
   border-image-slice: 1;
-}
-
-#time {
   text-align: center;
   font-size: 3rem;
 }
 
-#time>p {
+#time > p {
   padding: 1rem;
 }
 
 #links {
   border: 2px solid;
-  border-image: linear-gradient(to left, rgba(255, 145, 0, 1) 1%, rgba(236, 64, 122, 1) 100%);
+  border-image: linear-gradient(
+    to left,
+    rgba(255, 145, 0, 1) 1%,
+    rgba(236, 64, 122, 1) 100%
+  );
   border-image-slice: 1;
 }
 
@@ -75,11 +89,11 @@ a {
   border: 2px solid;
   border-image: linear-gradient(to left, #69f0ae 1%, #c6ff00 100%);
   border-image-slice: 1;
-  padding:0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+}
+
+.weather {
+  padding: 10%;
 }
 
 #weather-canvas {
@@ -89,19 +103,18 @@ a {
 }
 
 #weather-top-row {
-    text-align:center;
+  text-align: center;
 }
 
 #weather-city {
   margin: 0 auto;
   font-size: 2rem;
-  text-align:center;
-  margin:0;
+  text-align: center;
+  margin: 0;
 }
-
 
 #temperature-para {
   margin: 0 auto;
-  text-align:center;
+  text-align: center;
   font-size: 3rem;
 }
